@@ -294,6 +294,7 @@ AC_CONFIG_FILES([
  applications/scuff-static/Makefile
  applications/scuff-tmatrix/Makefile
  applications/scuff-transmission/Makefile
+ applications/scuff-avescatter/Makefile
  examples/Makefile
  examples/DiffractionPatterns/Makefile
  examples/CorrugatedDisc/Makefile
@@ -312,6 +313,7 @@ AC_CONFIG_FILES([
  examples/pythonCapacitance/Makefile
  examples/SolidSphere/Makefile
  examples/SphericalShell/Makefile
+ examples/Spheroid_Avscat/Makefile
  examples/SiliconBeams/Makefile
  examples/SiO2Spheres/Makefile
  examples/StriplineCapacitor/Makefile

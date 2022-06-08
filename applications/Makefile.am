@@ -10,4 +10,5 @@ SUBDIRS = \
  scuff-spectrum 	\
  scuff-static   	\
  scuff-tmatrix  	\
- scuff-transmission
+ scuff-transmission	\
+ scuff-avescatter

@@ -1,0 +1,11 @@
+prefix=/home/panxopanza/programs/scuff-em
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datadir=${prefix}/share
+
+Name: SCUFF-EM
+Description: Surface-integral-equation modeling of classical and quantum-statistical phenomena
+Version: 0.96
+Libs: -L${libdir} -lscuff  -lm -llapack -lblas    -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. -lgfortran -lm -lquadmath
+Cflags: -I${includedir}

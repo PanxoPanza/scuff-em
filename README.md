@@ -1,20 +1,12 @@
-[![Build Status](https://travis-ci.org/HomerReid/scuff-em.svg?branch=master)](https://travis-ci.org/HomerReid/scuff-em)
+# SCUFF-AVESCATTER
+A scuff-em application for average scattering of randomly oriented particles. More info in [this link](https://arxiv.org/abs/2110.14799v3)
 
-SCUFF-EM
-========
+To install this appplication, first install scuff-em and then copy and paste the content of this repository into scuff-em main folder
 
-A comprehensive and full-featured computational physics suite for 
-boundary-element analysis of electromagnetic scattering, 
-fluctuation-induced phenomena (Casimir forces and radiative 
-heat transfer), nanophotonics, RF device engineering, 
-electrostatics, and more. Includes a core library with C++ and 
-python APIs as well as many command-line applications.
-
-SCUFF-EM stands for
-
- Surface-CUrrent-Field Formulation of ElectroMagnetism
-
-For documentation and further information on SCUFF-EM visit the 
-[SCUFF-EM documentation homepage:](http://homerreid.github.io/scuff-em-documentation)
-
-http://homerreid.github.io/scuff-em-documentation
+## Installation steps
+- git clone https://github.com/HomerReid/scuff-em
+- cd scuff-em
+- git clone https://github.com/PanxoPanza/scattering_random_orientation.git
+- cp -r -f scattering_random_orientation/* ./
+- rm -r -f scattering_random_orientation
+- Install scuff-em, following the [instruction](http://homerreid.github.io/scuff-em-documentation/reference/Installing)

@@ -15,6 +15,7 @@ SUBDIRS =            	\
  SiliconBeams           \
  SolidSphere            \
  SphericalShell         \
+ Spheroid_Avscat	\
  StriplineCapacitor     \
  ThinFilm               \
  TwoBodyCapacitors      \

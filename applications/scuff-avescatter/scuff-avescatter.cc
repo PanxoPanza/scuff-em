@@ -87,6 +87,7 @@ int main(int argc, char *argv[])
   double DSIRadius = 0.0;
   bool DSIFarField = false;
   char *DSIOmegaFile = 0;
+  int NThreads     = 0; // F. Ramirez 2021
 
   /*--------------------------------------------------------------*/
   char *FileBase=0;
@@ -132,6 +133,7 @@ int main(int argc, char *argv[])
      {"Cache",          PA_STRING,  1, 1,       (void *)&Cache,      0,             "read/write cache"},
      {"ReadCache",      PA_STRING,  1, MAXCACHE,(void *)ReadCache,   &nReadCache,   "read cache"},
      {"WriteCache",     PA_STRING,  1, 1,       (void *)&WriteCache, 0,             "write cache"},
+     {"Threads",           PA_INT,  1, 1,       (void *)&NThreads,   0,               "number of threads for parallel computing"},
 /**/     
      {0,0,0,0,0,0,0}
    };
@@ -151,6 +153,9 @@ int main(int argc, char *argv[])
 
   if (DSIPFT && DSIPoints==0)
    DSIPoints=230;
+
+   if (NThreads!=0)             // Specify number of threads (F. Ramirez)
+    SetNumThreads(NThreads);
 
   /*******************************************************************/
   /* determine which PFT methods were requested       ****************/

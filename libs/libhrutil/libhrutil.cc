@@ -505,6 +505,7 @@ void SetNumThreads(int pNumThreads)
 int GetNumThreads()
 {
 #if defined(USE_OPENMP)
+  if (NumThreads!=-1) return NumThreads; // F. Ramirez (2021)
   return omp_get_max_threads();
 #elif defined(USE_PTHREAD)
   if (NumThreads!=-1) return NumThreads;

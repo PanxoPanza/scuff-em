@@ -135,8 +135,10 @@ SNEQData *CreateSNEQData(char *GeoFile, char *TransFile,
 	  // else if (PFTMethods[npm] == SCUFF_AVSCAT_EMT)
 		// sprintf(PFTName, "AVSCAT");
      
+     //SNEQD->SIFluxFileNames[npm]
+     // = vstrdup("%s.AVSCAT.%s",SNEQD->FileBase,PFTName);
      SNEQD->SIFluxFileNames[npm]
-      = vstrdup("%s.AVSCAT.%s",SNEQD->FileBase,PFTName);
+      = vstrdup("%s.SIFlux.AVSCAT",SNEQD->FileBase);
      WriteSIFluxFilePreamble(SNEQD, SNEQD->SIFluxFileNames[npm]);
    };
   
